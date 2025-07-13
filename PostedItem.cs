@@ -1,4 +1,5 @@
-﻿public class PostedItem
+﻿namespace post_office_dojo;
+public class PostedItem
 {
     public string Address;
     public string PostedDate;

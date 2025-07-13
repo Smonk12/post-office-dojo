@@ -1,4 +1,5 @@
-﻿public class Box : PostedItem
+﻿namespace post_office_dojo;
+public class Box : PostedItem
 {
     public string Size;
     public double Weight;

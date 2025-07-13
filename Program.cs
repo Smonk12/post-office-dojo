@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+namespace post_office_dojo;
 class Program
 {
     static void Main(string[] args)

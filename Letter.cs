@@ -1,4 +1,5 @@
-﻿public class Letter : PostedItem
+﻿namespace post_office_dojo;
+public class Letter : PostedItem
 {
     public double Price = 1.99;
 

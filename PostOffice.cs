@@ -1,4 +1,5 @@
-﻿public class PostOffice
+﻿namespace post_office_dojo;
+public class PostOffice
 {
     private List<PostedItem> _items;
     public PostOffice()
@@ -20,8 +21,10 @@
         }   
     }
 
-    public void CalculateTotalByType(string type)
+    public double CalculateTotalByType(string type)
     {
+        type = type.ToLower();
+
         if(type == "letter")
         {
             double total = 0;
@@ -33,6 +36,7 @@
                 }
             }
             Console.WriteLine($"Total price for letters: {total}");
+            return total;
         }
         else if (type == "small box")
         {
@@ -45,6 +49,7 @@
                 }
             }
             Console.WriteLine($"Total price for boxes: {total}");
+            return total;
         }
         else if (type == "big box")
         {
@@ -57,10 +62,12 @@
                 }
             }
             Console.WriteLine($"Total price for boxes: {total}");
+            return total;
         }
         else
         {
             Console.WriteLine("Unknown item type.");
+            return 0;
         }
     }
 }
